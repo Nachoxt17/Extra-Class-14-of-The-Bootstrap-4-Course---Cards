@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--Agregando este Link de Abajo agregamos a Bootstrap 4 la Librería de FontAwesome, que sirve para Usar/Poner Íconos.-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Bootstrap 4 Course Class 14 - Cards (Extra Class Made by Me)</title>
+        <!--Tarjetas(Cards) en Bootstrap 4. Sirven para presentar Tarjetas(Cards) con Opciones(Como distintos Productos para comprar en un ECommerce) en Forma de Cuadrículas(Grid).-->
+</head>
+<body>
+
+<h1 class="h1">Bootstrap 4 Cards.</h1>
+
+<hr class="bg-dark">
+
+<h3>+-To see all the Colors, Basic Sizes and Basic Styles of the Bootstrap 4 Cards as We Have Seen with all the previous Elements in Previous Classes, Please Read
+   <a href="https://getbootstrap.com/docs/4.4/components/card/">The Bootstrap 4 Cards Documentation.</a></h3>
+  <!--Para ver Los Distintos Colores, Tamaños Básicos y Estilos Básicos de las Cards de Bootstrap 4 al igual que lo dimos con los demás Elementos Anteriores en las Clases Anteriores, lee la Documentación Oficial 
+  de las Cards de Bootstrap 4 en:_  https://getbootstrap.com/docs/4.4/components/card/. Nosotros no vamos a darlo en esta Clase porque ya es algo redundante y repetitivo, y en esta Clase vamos a ver Cosas Nuevas
+  Relacionadas a las Tarjetas(Cards).-->
+
+<hr class="bg-dark">
+
+<h2 class="text-center">Standard Bootstrap 4 Card:_</h2>
+<!--Esta es la Estructura Básica de las Tarjetas(Cards) de Bootstrap 4. Para Crearlas Creamos un Elemento <section> o un Elemento <div> con la class="container" dentro de él el Elemento <div> con la class="card"
+  que va a ser la Tarjeta(Card) en sí, dentro Podemos ponerle una Imagen que es un Elemento <img> con las class="card-img-top img-fluid" que son para Estilizar y Adaptar la Imagen al Estilo y Tamaño de la 
+  Tarjeta(Card) según pueda cambiar, luego va el Elemento <div> con la class="card-body" que no puede faltar ya que va a ser el Cuerpo(body) de la Tarjeta(Card) y para agregarle adentro a la Tarjeta(Card) un 
+  Título creamos un Elemento <h5>(O el que Convenga) con la class="card-title" y para agregarle un Texto creamos un Elemento <p> con las class="card-text". Tambíen ahora ya de forma habitual se le pueden agregar
+  Elementos <button> o <a href="#"> para agregarle un Link que lleve al Usuario a más Inormación sobre el contenido de la Tarjeta(Card).-->
+
+<section class="container">
+  <div class="card" style="width: 18rem;">
+    <img src="DeafultImage.png" class="card-img-top img-fluid" alt="Default Image">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</section>
+
+<hr class="bg-dark">
+
+<h2 class="text-center">Group of 3 Cards:_</h2>
+<!--Lo mismo que el Ejemplo anterior, pero se puede crear un Grupo de Tarjetas(Cards) que van a ir TODAS PEGADAS creando dentro del Elemento <section class="container"> un Elemento <div class="card-group"> dentro
+  del cual pondremos todas nuestras Tarjetas(Cards).-->
+
+<section class="container">
+  <div class="card-group">
+    <div class="card">
+      <img src="DeafultImage.png" class="card-img-top img-fluid" alt="Default Image">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="DeafultImage.png" class="card-img-top img-fluid" alt="Default Image">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="DeafultImage.png" class="card-img-top img-fluid" alt="Default Image">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="bg-dark">
+
+<h2 class="text-center">Deck of 3 Cards:_</h2>
+<!--Lo mismo que el Ejemplo anterior, pero se puede crear un Deck(Cubierta) de Tarjetas(Cards) que van a ir SEPARADAS ENTRE SÍ creando dentro del Elemento <section class="container"> un Elemento <div class="card-deck">
+ dentro del cual pondremos todas nuestras Tarjetas(Cards).-->
+
+<section class="container">
+  <div class="card-deck">
+    <div class="card">
+      <img src="DeafultImage.png" class="card-img-top img-fluid" alt="Default Image">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="DeafultImage.png" class="card-img-top img-fluid" alt="Default Image">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="DeafultImage.png" class="card-img-top img-fluid" alt="Default Image">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="bg-dark">
+
+
+<!-- Si utilizamos componentes de Bootstrap que requieran Javascript agregar estos tres archivos -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
